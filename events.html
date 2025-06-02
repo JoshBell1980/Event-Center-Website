@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                 <a href="index.html">Event Center</a>
+            </div>
+            <!-- Checkbox for the menu toggle -->
+            <input type="checkbox" id="menu-toggle">
+            <!-- Label for the checkbox, this will be the hamburger icon -->
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="navbar-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>   
+    </header>
+      <section class="events-section">
+        <h2>Upcoming Bands</h2>
+        <!-- Hero Section 1 -->
+    <section class="hero hero-1">
+        <h1>Nickelback</h1>
+        <p>Experience the thrill of the live performance by Nickelback!</p>
+        <button class="cta-button">Get Tickets</button>
+    </section>
+
+    <!-- Hero Section 2 -->
+    <section class="hero hero-2">
+        <h1>Disturbed</h1>
+        <p>Discover the incredible music of Disturbed.</p>
+        <button class="cta-button">Get Tickets</button>
+    </section>
+
+    <!-- Hero Section 3 -->
+    <section class="hero hero-3">
+        <h1>Daughtry</h1>
+        <p>Don't miss out on Daughtry's music event of the year!</p>
+        <button class="cta-button">Get Tickets</button>
+    </section>
+<!-- Add this just before the closing </body> tag in your HTML files -->
+<button id="backToTop" title="Back to Top">&#8679;</button>
+
+<script>
+  // Show/hide the button based on scroll position
+  const backToTop = document.getElementById('backToTop');
+  window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+  // Scroll to top when clicked
+  backToTop.onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+</script>    
+
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>Created by Event Center Team &copy; 2025</p>
+  </footer>
+
+</html>

@@ -1,0 +1,326 @@
+/* Basic styling for the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #404240; /* Dark background */
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #ff6f61; /* Highlight color on hover */
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+display: none;
+font-size: 30px;
+color: white;
+cursor: pointer;
+}
+
+/* Hide the checkbox input */
+#menu-toggle {
+display: none;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+/* Hide the navigation links by default */
+nav ul {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+}
+
+/* Display the hamburger icon */
+.menu-icon {
+  display: block;
+}
+
+/* When the checkbox is checked, show the menu */
+#menu-toggle:checked + label + ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+}
+
+fieldset {
+  border: none; /* Removes the border around the fieldset */
+}
+
+/* Begin Home Page Styling */
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  background: url('images/alterbridge.jpg') no-repeat center center/cover; /* Use an image as the background */
+  color: #ffffff;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #404240;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e85b50;
+}
+
+/* Events Section */
+
+.events-section {
+  background-color: #404240; /* Dark background color */
+  color: white; /* Ensure text is readable on the dark background */
+  text-align: center; /* Center-align the text */
+  padding : 0px 15px; /* Add padding for spacing */
+}
+
+/* Event Details Section */
+.event-details {
+  text-align: center;
+  padding: 80px 15px;
+  color: white;
+  background-color: #404240; /* Dark background */
+
+}
+
+.event-details h2 {
+  color: white;
+  background-color: #404240; /* Dark background */
+  font-size: 2rem;
+  /* margin-bottom: 20px; */
+}
+
+.event-details p {
+  font-size: 1.2rem;
+  color: white;
+  background-color: #404240; /* Dark background */
+}
+/* End Events Page Styling */
+
+/* End Home Page Styling */
+
+/* Begin Events Page Styling */
+
+/* Hero Section 1 Styling */
+.hero-1 {
+  background: url('images/Nickelback.jpg') no-repeat center center/cover;
+}
+
+/* Hero Section 2 Styling */
+.hero-2 {
+  background: url('images/disturbed.jpg') no-repeat center center/cover;
+}
+
+/* Hero Section 3 Styling */
+.hero-3 {
+  background: url('images/daughtry.jpg') no-repeat center center/cover;
+}
+
+/* End Events Page Styling */
+
+/* Begin Menu Page Styling */
+
+/* Menu Section Styling */
+.menu-section {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 30px; /* Space between rows */
+  background: url('images/concessionstand.jpg') no-repeat center center/cover; /* Use an image as the background */
+  padding: 46px;
+}
+
+.menu-row {
+  text-align: center;
+}
+
+.menu-row h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.menu-images {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  gap: 20px; /* Space between images */
+}
+
+.menu-images img {
+  width: 100%;
+  max-width: 275px; /* Ensure images don't exceed 300px */
+  height: auto;
+  max-height: 275px; /* Ensure images don't exceed 200px in height */
+  border-radius: 5px; /* Optional: Rounded corners for images */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+}
+
+/* End Menu Page Styling */
+
+/* Begin Location Page Styling */
+
+/* Location Section Styling */
+.location-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #404240; /* Dark background */
+  height: 60vh;
+  background: url('images/amp_image.jpg') no-repeat center center/cover; /* Use an image as the background */
+  color: #ffffff;
+  padding: 20px;
+}
+
+.location-flex {
+  display: flex;
+  align-items: flex-start;
+  padding: 32px 15px;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #404240; /* Dark background */
+}
+
+.map-container iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.location-text {
+  max-width: 400px;
+  color: #fff;
+}
+
+/* End Location Page Styling */
+
+/* Begin Contact Page Styling */
+
+/*Contact Section Styling */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #404240; /* Dark background */
+  height: 50vh;
+  background: url('images/contact.png') no-repeat center center/cover; /* Use an image as the background */
+  color: #ffffff;
+  padding: 20px;
+}
+
+.contact-flex {
+  display: flex;
+  align-items: flex-start;
+  padding: 32px 15px;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #404240; /* Dark background */
+}
+
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+
+/*End Contact Page Styling */
+/* Begin Back to Top Button */
+#backToTop {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  background: #404240;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+}
+#backToTop:hover {
+  background: #e85b50;
+}
+/* End Back to Top Button */
+
+/* Footer Styling */
+/* Ensure the footer stays at the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+footer.footer {
+  margin-top: auto; /* Push the footer to the bottom */
+  text-align: center;
+  background-color: #404240; /* Dark background */
+  color: white;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}
