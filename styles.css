@@ -84,7 +84,7 @@ fieldset {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 58vh;
+  height: 57.9vh;
   background: url('images/alterbridge.jpg') no-repeat center center/cover; /* Use an image as the background */
   color: #ffffff;
   padding: 10px;
@@ -176,7 +176,7 @@ fieldset {
   flex-direction: column; /* Stack rows vertically */
   gap: 30px; /* Space between rows */
   background: url('images/concessionstand.jpg') no-repeat center center/cover; /* Use an image as the background */
-  padding: 46px;
+  padding: 15px;
 }
 
 .menu-row {
@@ -216,7 +216,7 @@ fieldset {
   align-items: center;
   text-align: center;
   background-color: #404240; /* Dark background */
-  height: 60vh;
+  height: 54.9vh;
   background: url('images/amp_image.jpg') no-repeat center center/cover; /* Use an image as the background */
   color: #ffffff;
   padding: 20px;
@@ -254,8 +254,7 @@ fieldset {
   align-items: center;
   text-align: center;
   background-color: #404240; /* Dark background */
-  height: 50vh;
-  background: url('images/contact.png') no-repeat center center/cover; /* Use an image as the background */
+  height: 40vh;
   color: #ffffff;
   padding: 20px;
 }
@@ -274,7 +273,7 @@ fieldset {
   max-width: 600px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-  padding: 20px;
+  padding: 48.3px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 } 
