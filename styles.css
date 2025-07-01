@@ -84,20 +84,20 @@ fieldset {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 60vh;
+  height: 58vh;
   background: url('images/alterbridge.jpg') no-repeat center center/cover; /* Use an image as the background */
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .hero p {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .cta-button {
@@ -121,13 +121,13 @@ fieldset {
   background-color: #404240; /* Dark background color */
   color: white; /* Ensure text is readable on the dark background */
   text-align: center; /* Center-align the text */
-  padding : 0px 15px; /* Add padding for spacing */
+  padding : 0px 5px; /* Add padding for spacing */
 }
 
 /* Event Details Section */
 .event-details {
   text-align: center;
-  padding: 80px 15px;
+  padding: 0px 5px;
   color: white;
   background-color: #404240; /* Dark background */
 
@@ -281,6 +281,32 @@ fieldset {
 
 /*End Contact Page Styling */
 
+/* Begin About Page Styling */
+
+/* About Section Styling */
+.about-section {
+  background-color: #404240; /* Match nav background */
+  color: white;
+  text-align: center;
+  padding: 40px 20px 30px 20px;
+  margin-top: auto;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffffff; /* Optional: highlight heading */
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* End About Page Styling */
+
 /* Begin Back to Top Button */
 #backToTop {
   display: none; /* Hidden by default */
@@ -309,7 +335,7 @@ fieldset {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  min-height: 90vh; /* Ensure the body takes up the full viewport height */
   margin: 0; /* Remove default margin */
 }
 
@@ -318,10 +344,12 @@ footer.footer {
   text-align: center;
   background-color: #404240; /* Dark background */
   color: white;
-  padding: 10px 0;
+  padding: 34px 0;
   font-size: 0.9rem;
 }
 
 .footer p {
-  margin: 0;
+  margin-top: auto;
+  background-color: #404240; /* Dark background */
+  padding-bottom: 0px 0;
 }
